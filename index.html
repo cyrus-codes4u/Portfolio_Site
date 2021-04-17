@@ -1,77 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cyrus Glanzer Portfolio Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <div class = "wrapper">
+    <header class="group group-row">
+      <div class="item">
         <h1>Cyrus Glanzer</h1>
-        <h2 id="intro">Web Developer</h2>
-        <p>Brooklyn, NY</p>
       </div>
-      <div class = "wrapper">
-        <nav>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#projects">Projects</a>
-        </nav>
-      </div>
+      <nav class="item">
+        <ul class="group">
+          <li class="item"><a href="#about" >About</a></li>
+          <li class="item"><a href="#projects" >Contact</a></li>
+          <li class="item"><a href="#contact" >Projects</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <article id="about" >
-        <section class = "wrapper">
-          <h2>About Me</h2>
-          <p>As a recent graduate with a degree in art history and theory, I wasn't sure what I wanted to do with my career.</p>
-          <p> But then I realized: what better way to merge my passions for writing and visual communication than through web development? All you're seeing right now is just that, written content in a (hopefully) visually compelling format.</p>
-          <p> Through Thinkful&trade; Software Engineering Program, I'm learning several skills to get me there:</p>
-          <ol>
-            <li>HTML & CSS</li>
-            <li>Javascript and its frameworks</li>
-            <li>Backend Development</li>
-            <li>Collaboration through GitHub</li>
-          </ol>
-          <p>I'll be posting updates on projects here. So keep checking in.</p>
-        </section>  
-        <img src="images/drawing.jpg" alt="Drawing">
-      </article>
-      <hr>
-
-      <article id="contact">
-        <div class = "wrapper text">
-          <h2>Contact Me</h2>
-          <p>Feel free to reach out</p>
-          <ul>
-            <li>
-              <img src="images/github-logo.png" alt="GitHub logo">
-              <a href="https://github.com/cyrus-codes4u" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <img src="images/linkedin-logo.png" alt="LinkedIn logo">
-              <a href="https://www.linkedin.com/in/cyrus-glanzer" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-              <img src="images/gmail-logo.png" alt="GMail envelope logo">
-              <a href="mailto:cyrusglanzer@gmail.com, & subject=Hi%20There">Email</a>
-            </li>
+      <!-- Introduction Section -->
+      <section id="intro">
+        <div class="center">
+          <h2> Welcome! </h2>
+          <article>
+            <h3>I'm Cyrus Glanzer.</h3>
+            <p>I'm a budding software developer based out of Brooklyn, NY. </p>
+            <p>Thank you for coming to my portfolio site. Check out some of my work below. </p>
+          </article>
         </div>
-      </article>
-      <hr>
+      </section>
 
-      <div class= "wrapper" id="projects">
-        <h2>Projects</h2>
-        <br>
-        <p>My portfolio page is all I have just yet, check in later to see what I will create!</p>
-      </div>
+      <section id="about" >
+        <div class="center">
+          <h2>About Me</h2>
+          <div class="group group-row">
+            <article class="item">
+              <h3>A Creative at Heart</h3>
+              <div>
+                <p>As a recent graduate with a degree in art history and theory, I wasn't sure what I wanted to do with my career.</p>
+                <p> But then I realized: what better way to merge my passions for writing and visual communication than through web development?  That is all this webpage is. It is written content in a visually compelling format.</p>
+                <p> Through the Thinkful&trade; Software Engineering Program, I'm learning several skills to get me there:</p>
+                <ol>
+                  <li>HTML & CSS</li>
+                  <li>Javascript and its frameworks</li>
+                  <li>Backend Development</li>
+                  <li>Collaboration through GitHub</li>
+                </ol>
+                <p>I'll be posting updates on projects here. So keep checking in.</p>
+              </div>
+            </article>  
+            <img class="item" src="/images/drawing.jpg" alt="Drawing">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="center">
+          <h2>Projects</h2>
+          <div class="group group-row">
+            <article class="project item">
+              <img src="images/coming-soon.jpg"  alt="ripped paper revealing text 'coming soon'">
+              <div>
+                <h3>Application Title</h3>
+                <p>
+                  This is a filler description for a non existent application. One day it will have actual information describing the intention, use and target audience.
+                </p>
+                <p>Stack: React, Node, Express, Knex</p>
+                <div class="project-links">
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/github-logo.png" alt="GitHub logo"></a>
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/internet-logo.png" alt="White and black internet logo with mouse clicking a globe"></a>
+                </div>
+              </div>
+            </article>
+            <article class="project item">
+              <img src="images/coming-soon.jpg"  alt="ripped paper revealing text 'coming soon'">
+              <div>
+                <h3>Application Title</h3>
+                <p>
+                  This is a filler description for a non existent application. One day it will have actual information describing the intention, use and target audience.
+                </p>
+                <p>Stack: React, Node, Express, Knex</p>
+                <div class="project-links">
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/github-logo.png" alt="GitHub logo"></a>
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/internet-logo.png" alt="White and black internet logo with mouse clicking a globe"></a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="group group-row">
+            <article class="project item">
+              <img src="images/coming-soon.jpg"  alt="ripped paper revealing text 'coming soon'">
+              <div>
+                <h3>Application Title</h3>
+                <p>
+                  This is a filler description for a non existent application. One day it will have actual information describing the intention, use and target audience.
+                </p>
+                <p>Stack: React, Node, Express, Knex</p>
+                <div class="project-links">
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/github-logo.png" alt="GitHub logo"></a>
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/internet-logo.png" alt="White and black internet logo with mouse clicking a globe"></a>
+                </div>
+              </div>
+            </article>
+            <article class="item project">
+              <img src="images/coming-soon.jpg"  alt="ripped paper revealing text 'coming soon'">
+              <div>
+                <h3>Application Title</h3>
+                <p>
+                  This is a filler description for a non existent application. One day it will have actual information describing the intention, use and target audience.
+                </p>
+                <p>Stack: React, Node, Express, Knex</p>
+                <div class="project-links">
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/github-logo.png" alt="GitHub logo"></a>
+                  <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/internet-logo.png" alt="White and black internet logo with mouse clicking a globe"></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact">
+        <div class="center">
+          <div>
+            <h2>Contact Me</h2>
+            <h3>Feel free to reach out</h3>
+          </div>
+          <div>
+            <ul class="group">
+              <li class="item">
+                <a href="https://github.com/cyrus-codes4u" target="_blank" class="logo"><img src="/images/github-logo.png" alt="GitHub logo"></a>
+              </li>
+              <li class="item">
+                <a href="https://www.linkedin.com/in/cyrus-glanzer" target="_blank" class="logo"><img src="/images/linkedin-logo.png" alt="LinkedIn logo"></a>
+              </li>
+              <li class="item">
+                <a href="mailto:cyrusglanzer@gmail.com" class="logo"><img src="/images/gmail-logo.png" alt="GMail envelope logo"></a>
+              </li>
+          </div>
+          <form class="group">
+            <div class="item">  
+              <label for="name">Name</label>
+              <input id="name" name="name" required type="text">
+            </div>
+            <div class="item">
+              <label for="email">Email</label>
+              <input id="email" name="email" required type="text">
+            </div>
+            <div class="item">
+              <label for="form-message">Your message</label>
+              <textarea
+                class="item"
+                id="form-message"
+                name="message"
+                autofocus="on"
+                wrap ="soft"
+                rows="7"
+                required
+              ></textarea>
+            </div>
+            <button class="item" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; Cyrus Glanzer</p>
+      &copy; Cyrus Glanzer
     </footer>
     <script src="script.js"></script>
   </body>
