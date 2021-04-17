@@ -1,57 +1,174 @@
-html{
-  box-sizing: border-box;
+/* General Rules */
+body {
   font-family: 'Andale Mono', Courier,'Arial Narrow', monospace;
-  margin: 0px;
+  box-sizing: border-box;
+  background-color: #FCFF6C;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-header, footer, nav {
+header, footer{
   background-color: #6D454C;
+  font-family: 'Andale Mono', Courier,'Arial Narrow', monospace;
+  color: #D89D6A;
+  padding: 25px 0px;
+}
+
+/* Positioning of elements */
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.item {
+  flex: 1;
+  display: inline;
+}
+
+.center {
+  margin: 0 5%;
+}
+
+/* Box Sizing */
+img{
+  width: 40px;
+}
+
+.project {
+  min-width: 140px;
+}
+
+#about img {
+  max-width: 400px;
+  width: 90%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+#contact li{
+  width: 40px;
+}
+
+/* Navigation */
+header h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+header nav{
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul.group {
+  list-style: none;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: center;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-family: 'Andale Mono', Courier,'Arial Narrow', monospace;
   color: #D89D6A;
 }
-header, article {
-  display: flex;
-  padding: 0% 2%;
-  min-width: 650px; 
+
+header nav ul li:last-child a{
+  margin-right: 0;
+}
+
+/* Color Scheme */
+#about, #contact{
+  background-color: #D7FFAB;
+}
+
+#projects, #intro, #about, #contact{
+  color: #31465E;
+  margin: 0px;
+  padding: 20px;
+} 
+
+/* Project Tiles */
+.project {
+  border-radius: 20px;
+  background-color: #D89D6A;
+  margin: 5px;
+}
+.project > img {
+  width: 80%;
+  display: block;
+  margin: 20px auto 0 auto;
+  border-radius: 20px;
+}
+.project > div{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-links {
+  text-align: center;
+  margin: 8px 0px;
+}
+
+/* Typography */
+h1{
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+p{
+  font-size: 1em;
 }
 
 a {
-  display: inline-block;
-  font-family: ;
-  font-size: 16px;
+  font-size: 1.4em;
   text-align: center;
   text-decoration: none;
-  margin: 10px;
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid black;
+  font-weight: 400;
 }
 
-.wrapper {
-  flex: 4;
-  min-width: 300px;
-  background-color: transparent;
-  vertical-align: center;
-}
-#about, #projects{
-  background-color: #D7FFAB;
-  padding: 20px;
-  color: #31465E;
-}
-#about > img{
-  max-width: 50%;
+/* Contact Section with Form */
+#contact div ul.group {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-#contact{
-  background-color: #FCFF6C;
-  color: #31465E;
+#contact div ul.group li a img {
+  width: 80%;
+  background-color: white;
+  border-radius: 50%;
+  height: auto;
+  max-width: 150px;
 }
-#contact img{
-  width: 40px;
+form div.item {
+  justify-content: center;
 }
-h2{
-  text-align: center;
+form div.item textarea, form button {
+  width: 100%;
+}
+
+/* Big Screen changes*/
+@media all and (min-width: 700px){
+  .group-row{
+    flex-direction: row;
+  }
+  
+  header.group {
+    justify-content: space-between;
+  }
 }
