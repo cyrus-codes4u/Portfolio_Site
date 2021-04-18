@@ -8,7 +8,7 @@ body {
 header, footer{
   background-color: #6D454C;
   font-family: 'Andale Mono', Courier,'Arial Narrow', monospace;
-  color: #D89D6A;
+  color: #E9a86e;
   padding: 25px 0px;
 }
 
@@ -72,7 +72,7 @@ header nav ul li a{
   text-decoration: none;
   margin: 0 20px 0 0;
   font-family: 'Andale Mono', Courier,'Arial Narrow', monospace;
-  color: #D89D6A;
+  color: inherit;
 }
 
 header nav ul li:last-child a{
@@ -85,7 +85,7 @@ header nav ul li:last-child a{
 }
 
 #projects, #intro, #about, #contact{
-  color: #31465E;
+  color: #222C3C;
   margin: 0px;
   padding: 20px;
 } 
