@@ -6,9 +6,9 @@ body {
 }
 
 header, footer{
-  background-color: #6D454C;
+  background-color: #412A2B;
   font-family: 'Andale Mono', Courier,'Arial Narrow', monospace;
-  color: #E9a86e;
+  color: #E2B58D;
   padding: 25px 0px;
 }
 
@@ -85,7 +85,7 @@ header nav ul li:last-child a{
 }
 
 #projects, #intro, #about, #contact{
-  color: #222C3C;
+  color: #252F41;
   margin: 0px;
   padding: 20px;
 } 
@@ -93,7 +93,7 @@ header nav ul li:last-child a{
 /* Project Tiles */
 .project {
   border-radius: 20px;
-  background-color: #D89D6A;
+  background-color: #E2B58D;
   margin: 5px;
 }
 .project > img {
